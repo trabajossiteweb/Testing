@@ -168,7 +168,7 @@
                 <div>📷</div>
                 <h3>Escanear código QR</h3>
                 <p>Utiliza el código QR del edificio para acceder a su información</p>
-                <button class="btn" href="Testin/escanear.html">Escanear QR</button>
+                <button class="btn">Escanear QR</button>
             </div>
             
             <div class="option" onclick="locateUser()">
@@ -248,13 +248,13 @@
         
         // Función para mostrar el escáner de QR (simulado)
         function showQRScanner() {
-            alert("En una implementación real, aquí se activaría la cámara para escanear un código QR.\n\nPara esta demo, simularemos el escaneo de un código.");
-            
-            // Simular escaneo de QR después de 1 segundo
-            setTimeout(() => {
-                const randomBuilding = buildingsDatabase[Math.floor(Math.random() * buildingsDatabase.length)];
-                displayBuildingInfo(randomBuilding);
-            }, 1000);
+            //<!-- alert("En una implementación real, aquí se activaría la cámara para escanear un código QR.\n\nPara esta demo, simularemos el escaneo de un código.");
+            //    setTimeout(() => {
+             //   const randomBuilding = buildingsDatabase[Math.floor(Math.random() * buildingsDatabase.length)];
+             //   displayBuildingInfo(randomBuilding);
+            //}, 1000); -->
+            // Redirigir a la página de escaneo
+            window.location.href = 'Testin/escanear.html';
         }
         
         // Función para localizar al usuario
