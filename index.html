@@ -164,11 +164,11 @@
         </header>
         
         <div class="options">
-            <div class="option" onclick="showQRScanner()">
+            <div class="option">
                 <div>📷</div>
                 <h3>Escanear código QR</h3>
                 <p>Utiliza el código QR del edificio para acceder a su información</p>
-                <button class="btn">Escanear QR</button>
+                <a class="btn" href="Testin/escanear.html">Escanear QR</a>
             </div>
             
             <div class="option" onclick="locateUser()">
@@ -254,7 +254,7 @@
              //   displayBuildingInfo(randomBuilding);
             //}, 1000); -->
             // Redirigir a la página de escaneo
-            window.location.href = 'Testin/escanear.html';
+            window.location.href = '/escanear.html';
         }
         
         // Función para localizar al usuario
